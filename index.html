@@ -1,40 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina web desarrollo de sistemas</title>
+    <title>Biblioteca Inclusiva</title>
     <link rel="icon" type="image/x-icon" href="img/house.png">
     <link rel="stylesheet" href="css/main.css">
-
 </head>
 <body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
-    <h1 id="titulo">Pagina de Prueba</h1>
-</header>
-<main>
-    <section>
-        <p>Esta es una pagina de prueba para el desarrollo de sistemas</p>
-        <p>Aquí puedes encontrar información sobre desarrollo web.</p>
-        <a href="https://www.google.com" target="_blank">Ir a Google</a>
-    </section>
-    <aside>
-        <div class="contenedor ">
-            <div class="box1">Caja 1</div>
-            <div class="box1">Caja 2</div>
-            <div class="box">Caja 3</div>
+<a class="skip-link" href="#main">Saltar al contenido principal</a>
+<header role="banner">
+    <div class="topbar">
+        <div class="brand" aria-label="Logo de la biblioteca">
+            <img src="image/library.svg" alt="" aria-hidden="true" />
+            <span>Biblioteca Inclusiva</span>
         </div>
-    </aside>
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#accesibilidad">Accesibilidad</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="hero" role="img" aria-label="Estantería de biblioteca con libros">
+        <div class="hero-content">
+            <h1 id="titulo">Bienvenido a la Biblioteca</h1>
+            <p>Un espacio accesible para leer, aprender y compartir.</p>
+            <form class="search" role="search" aria-label="Buscar en la biblioteca">
+                <label for="search-input" class="sr-only">Buscar libros</label>
+                <input id="search-input" type="search" placeholder="Buscar por título, autor o tema" />
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+    </div>
+</header>
+
+<main id="main">
+    <section id="coleccion" aria-labelledby="coleccion-title">
+        <div class="contenedor">
+            <h2 id="coleccion-title">Colección destacada</h2>
+            <p class="lead">Descubre libros seleccionados para todas las edades y necesidades.</p>
+            <div class="cards" role="list">
+                <article class="card" role="listitem" aria-label="Libro: El mundo en tus manos">
+                    <h3>El mundo en tus manos</h3>
+                    <p>Una introducción amigable a la tecnología y la ciencia para jóvenes.</p>
+                    <a href="#" class="button">Ver detalles</a>
+                </article>
+                <article class="card" role="listitem" aria-label="Libro: Lectura fácil para todos">
+                    <h3>Lectura fácil para todos</h3>
+                    <p>Textos adaptados y accesibles, con un diseño pensado para la lectura inclusiva.</p>
+                    <a href="#" class="button">Ver detalles</a>
+                </article>
+                <article class="card" role="listitem" aria-label="Libro: Historia de la biblioteca">
+                    <h3>Historia de la biblioteca</h3>
+                    <p>Descubre cómo las bibliotecas han sido espacios de encuentro y cultura.</p>
+                    <a href="#" class="button">Ver detalles</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicios" aria-labelledby="servicios-title">
+        <div class="contenedor">
+            <h2 id="servicios-title">Servicios disponibles</h2>
+            <ul class="services">
+                <li>
+                    <h3>Préstamo de libros</h3>
+                    <p>Solicita libros en línea y recógelos cuando prefieras.</p>
+                </li>
+                <li>
+                    <h3>Espacio de estudio</h3>
+                    <p>Salas silenciosas con iluminación regulable y enchufes accesibles.</p>
+                </li>
+                <li>
+                    <h3>Accesibilidad</h3>
+                    <p>Material en braille, audiolibros y herramientas de lectura digital.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="accesibilidad" aria-labelledby="accesibilidad-title">
+        <div class="contenedor">
+            <h2 id="accesibilidad-title">Compromiso con la accesibilidad</h2>
+            <p>Trabajamos para que todas las personas, independientemente de sus capacidades, puedan disfrutar de nuestros recursos.</p>
+            <ul class="accessibility-list">
+                <li>Textos con alto contraste y tipografía legible.</li>
+                <li>Navegación por teclado y soporte de lectores de pantalla.</li>
+                <li>Opciones de tamaño de letra y modo oscuro.</li>
+            </ul>
+        </div>
+    </section>
 </main>
+
 <footer>
-    <p>&copy; 2023 Pagina de Prueba</p>
+    <div class="contenedor footer-grid">
+        <div>
+            <h2>Contacto</h2>
+            <p>Correo: <a href="mailto:info@biblioteca.ejemplo">info@biblioteca.ejemplo</a></p>
+            <p>Teléfono: <a href="tel:+541112345678">+54 11 1234 5678</a></p>
+        </div>
+        <div>
+            <h2>Enlaces útiles</h2>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#coleccion">Colección</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>Síguenos</h2>
+            <ul class="social">
+                <li><a href="#" aria-label="Ir a Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Ir a Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Ir a Instagram">Instagram</a></li>
+            </ul>
+        </div>
+    </div>
+    <p class="copyright">&copy; 2026 Biblioteca Inclusiva. Todos los derechos reservados.</p>
 </footer>
 </body>
 </html>
