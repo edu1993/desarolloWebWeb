@@ -9,14 +9,32 @@
 
 </head>
 <body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
     <h1 id="titulo">Pagina de Prueba</h1>
-    <p>Esta es una pagina de prueba para el desarrollo de sistemas</p>
-    <a href="https://www.google.com" target="_blank">Ir a Google</a>
-    <div class="contenedor ">
-        <div class="box1">Caja 1</div>
-        <div class="box1">Caja 2</div>
-        <div class="box">Caja 3</div>
-    </div>
-    
+</header>
+<main>
+    <section>
+        <p>Esta es una pagina de prueba para el desarrollo de sistemas</p>
+        <p>Aquí puedes encontrar información sobre desarrollo web.</p>
+        <a href="https://www.google.com" target="_blank">Ir a Google</a>
+    </section>
+    <aside>
+        <div class="contenedor ">
+            <div class="box1">Caja 1</div>
+            <div class="box1">Caja 2</div>
+            <div class="box">Caja 3</div>
+        </div>
+    </aside>
+</main>
+<footer>
+    <p>&copy; 2023 Pagina de Prueba</p>
+</footer>
 </body>
 </html>
